@@ -1,4 +1,32 @@
-# Alcovia Offline Sync Assignment
+# Alcovia Offline Sync
+
+## Live app
+
+**https://alcovia-offline-sync.vercel.app/**
+
+A public browser simulator is now available under `web/`.
+
+It lets you create independent actions on **Device A** and **Device B**, then sync in different orders while watching:
+
+- per-device offline queues
+- Lamport clocks
+- deterministic task conflict resolution
+- delete/update conflicts
+- processed-event deduplication
+- focus-session rewards
+- duplicate replay protection
+- server state and event timeline
+
+The original React Native/Expo + Express implementation remains in the repository. The hosted simulator is intentionally self-contained so it can demonstrate the sync rules without a persistent external server.
+
+### Run the web simulator locally
+
+```bash
+cd web
+python -m http.server 8000
+```
+
+---
 
 ## Overview
 
